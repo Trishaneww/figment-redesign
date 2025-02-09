@@ -1,0 +1,105 @@
+"use client"
+import CTA from '@/components/CTA'
+import Footer from '@/components/Footer'
+import MobilePrice from '@/components/MobilePrice'
+import Navbar from '@/components/Navbar'
+import PriceCards from '@/components/Pricing'
+import PricingChart from '@/components/PricingChart'
+import Image from 'next/image'
+import { useEffect, useState } from 'react';
+
+const Pricing = () => {
+  const [offset, setOffset] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => setOffset(window.scrollY * -0.2);
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+  const [offsets, setOffsets] = useState(Array(4).fill(0));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const newOffsets = Array(4)
+        .fill(0)
+        .map((_, index) => {
+          const section = document.getElementById(`section-${index}`);
+          if (section) {
+            const rect = section.getBoundingClientRect();
+            return rect.top * 0.2; // Adjust speed
+          }
+          return 0;
+        });
+      setOffsets(newOffsets);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  return (
+    <div className="flex flex-col bg-[#1A1A1A] text-[#F5EADF] pricing-homepage">
+        <Navbar />
+        <main className="h-[100vh] flex items-center justify-center text-[#F5EADF] bg-[#1A1A1A] relative z-30">
+            <div className="relative flex flex-col gap-2 justify-center items-center z-10 -mt-24 text-base lg:text-lg transform translate" style={{ transform: `translateY(${offset}px)` }}>
+                <p className="text-indigo-300">PRICING</p>
+                <p className="text-4xl lg:text-8xl font-light text-center lg:w-[70%]">HOW MUCH DOES A WEBSITE<span className="font-extrabold"> COST?</span></p>
+                <p>Whatever your budget, we deliver supeior quality.</p>
+            </div>
+            <Image
+                width={500}
+                height={500}
+                src="/assets/images/arrow1.png"
+                className='absolute top-0 inset-0 flex self-center place-self-center'
+                alt="Downwards arrow"
+            />
+        </main>
+
+      <main className="bg-[#1A1A1A] relative z-20">
+      <div className="lg:px-24 relative z-20 bg-[#1A1A1A] px-6 pb-10 lg:pb-20 lg:pt-20">
+        <section className="flex flex-col items-center gap-4">
+          <p className="text-3xl lg:text-7xl font-semibold">what is a website <span className="font-extrabold">worth</span> to you?</p>
+          <p className="text-base lg:text-lg">Your website is an investment. Let us know your budget, and we’ll maximize its impact for you.</p>
+          <section className="flex gap-8 py-12">
+            <div className="flex flex-col">
+              <p className="tracking-widest text-xl font-bold mb-6">DESIGN</p>
+              <ul className="flex flex-col ml-6">
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+              </ul>
+            </div>
+            <div className="flex flex-col">
+              <p className="tracking-widest text-xl font-bold mb-6">DEVELOPMENT</p>
+              <ul className="flex flex-col ml-6">
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+                <li className="flex gap-2 items-center text-lg"><div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div><p>Bespoke web development</p></li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
+      <PriceCards />
+
+      <div className="relative z-30 bg-[#1A1A1A]">
+          <MobilePrice />
+      </div>
+        
+      <div className="flex justify-center w-full relative z-30 bg-[#1A1A1A] overflow-hidden" id="features">
+          <PricingChart />
+      </div>
+      <div className="flex justify-center relative z-20 bg-[#1A1A1A]">
+       <CTA />
+      </div>
+      <div className="h-[100vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]">       
+      </div> 
+     <Footer />
+    </main>
+
+        
+    </div>
+  )
+}
+
+export default Pricing

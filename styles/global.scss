@@ -4,7 +4,26 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    scroll-behavior: smooth;
+}
+
+.scroll {
+  scroll-behavior: smooth;
+}
+
+.rowBorder {
+  border-bottom: 1px solid rgb(108, 108, 108);
+  display:flex;
+  align-items: center;
+} 
+
+.hero:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FAFAFA);
+}
+
+.hero:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #FAFAFA);
 }
 
 .secondary {
@@ -13,30 +32,30 @@
   font-style: normal;
 }
 
-.gallery{
-  height: 175vh;
-  background: rgb(45, 45, 45);
+.gallery {
+  height: 180vh;
   position: relative;
   display: flex;
   gap: 2vw;
   padding: 2vw;
   box-sizing: border-box;
   overflow: hidden;
-  .column{
+  .column {
       position: relative;
       height: 100%;
-      width: 25%;
-      min-width: 250px;
+      width: 100%;
+      min-width: 47vw;
       display: flex;
       flex-direction: column;
       gap: 2vw;
+
       .imageContainer{
           height: 100%;
           width: 100%;
           position: relative;
           border-radius: 1vw;
           overflow: hidden;
-          img{
+          img {
               object-fit: cover;
           }
       }
@@ -52,17 +71,31 @@
       &:nth-of-type(4){
           top: -75%;
       }
+      &:nth-of-type(5){
+          top: -50%;
+      }
   }
 }
+
+.hero:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FAFAFA);
+}
+
+.hero:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #FAFAFA);
+}
+
 .spacer{
-  height: 100vh;
+  height: 60vh;
 }
 
 nav {
   margin-top: -35px;
   height: 10px;
   width:30px;
-  background-color: rgb(255, 255, 255);
+  background-color:#1A1A1A;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,7 +107,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #FAFAFA;
+  background-color: #1A1A1A;
 }
 
 nav a {
@@ -101,6 +134,17 @@ nav svg{
   display: none;
 }
 
+
+@media(min-width: 1020px) {
+  .gallery {
+  height: 240vh;
+  .column {
+      min-width: 150px;
+  }
+}
+
+}
+
 @media(max-width: 1024px){
   .links-container{
     flex-direction: column;
@@ -109,7 +153,7 @@ nav svg{
     position: fixed;
     top: 0;
     right: -100%;
-    z-index: 10;
+    z-index: 90;
     width: 300px;
     color:white;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
@@ -124,7 +168,6 @@ nav svg{
     justify-content: flex-start;
   }
   .open-sidebar-button, .close-sidebar-button{
-    padding: 20px;
     display: block;
   }
   #sidebar-active:checked ~ .links-container{
