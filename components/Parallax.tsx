@@ -66,32 +66,36 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-[#1A1A1A] relative z-20">
+    <main className="bg-[#1A1A1A] relative z-20" id="services">
       <div className="lg:px-24 relative z-20 bg-[#1A1A1A] px-6 pb-10 lg:pb-20 pt-20 lg:pt-44">
-        <section className="flex flex-col gap-2">
+        <section className="flex flex-col gap-2 text-[#F5EADF]">
           <p className="text-3xl lg:text-4xl lg:w-[58%]">
           Welcome to Figment Studios! We're a website development company founded by Trishane Anthony. We specialize in custom websites that help businesses stand out and thrive online.
           </p>
-          <div className="flex items-center gap-2 text-lg">
-            <div className="bg-slate-50 h-[1.4px] w-[25px]"></div>
+          <div className="flex items-center gap-2 text-lg group">
+            <div className="bg-slate-50 h-[1.4px] w-[25px]  group-hover:w-[40px] duration-300"></div>
             <p>Why Figment Studios?</p>
           </div>
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 lg:w-[90%] xl:w-[80%] mb-12">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 lg:w-[90%] xl:w-[80%] mb-12 text-[#F5EADF]">
             <div className="hidden lg:flex"></div>
             <div className="flex flex-col">
               <p className="tracking-widest text-xl font-bold mb-6">DESIGN</p>
               <ul className="flex flex-col ml-6">
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Unique aesthetics, tailored for your project</p>
                 </li>
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>User experiences that keep visitors hooked</p>
                 </li>
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Strategic layouts for maximum conversions</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Mobile-first, pixel-perfect designs</p>
                 </li>
               </ul>
             </div>
@@ -101,16 +105,20 @@ export default function Home() {
               </p>
               <ul className="flex flex-col ml-6">
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Custom-built features that fit your needs</p>
                 </li>
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>SEO & conversion-ready, from the start</p>
                 </li>
                 <li className="flex gap-2 items-center text-lg">
-                  <div className="bg-slate-50 rounded-full h-[8px] w-[8px]"></div>
-                  <p>Bespoke web development</p>
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Lightning-fast performance, every time</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
+                  <p>Lightning-fast performance, every time</p>
                 </li>
               </ul>
             </div>
@@ -118,54 +126,7 @@ export default function Home() {
         </section>
       </div>
       <div className="space-y-16 lg:space-y-20 bg-[#1A1A1A] py-20 relative z-30">
-        {/* <div
-          id="section-1"
-          className="relative flex items-center justify-center lg:h-[65vh] px-6 lg:px-10"
-        >
-          <div className="relative flex flex-col gap-4 lg:gap-2 lg:flex-row items-center space-x-5">
-            <div>
-              <div
-                className="absolute -top-6 lg:top-0 -left-4 lg:-left-10 transform z-20"
-                style={{ transform: `translateY(${offsets[1]}px)` }}
-              >
-                <Image
-                  src="/assets/images/1.jpg"
-                  alt="Background Image"
-                  width={300}
-                  height={400}
-                  className="rounded-lg shadow-lg max-w-[100px] md:max-w-[150px] lg:max-w-[220px] border-[1.5px] border-gray-500"
-                />
-              </div>
-              <div className="relative z-10">
-                <Image
-                  src="/assets/images/proj1.png"
-                  alt="Foreground Image"
-                  width={1000}
-                  height={1000}
-                  className="rounded-lg shadow-lg border-[1.5px] border-gray-500"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2 relative z-20 w-full lg:max-w-md  lg:p-6  text-slate-50">
-              <p>Web Design | Web Development</p>
-              <h2 className="text-3xl font-bold text-slate-50 mt-4">
-                GrowByte Marketing
-              </h2>
-              <p className="mt-2 text-gray-50">
-                The Energy Humanities is an emerging field of study that uses
-                traditional humanities-based approaches to tackle questions
-                about climate, energy and culture. Designed and developed this
-                in Webflow and set up the CMS to accomodate hundreds of articles
-                and generate more clicks.
-              </p>
-              <div className="flex items-center gap-2 text-slate-50">
-                <div className="bg-slate-50 h-[1.4px] w-[25px]"></div>
-                <Link href="/">View Live Site</Link>
-                <SquareArrowOutUpRight />
-              </div>
-            </div>
-          </div>
-        </div> */}
+     
       </div>
 
       <div ref={gallery} className="lg:flex gallery relative z-20 bg-[#1A1A1A]">
@@ -174,10 +135,10 @@ export default function Home() {
             images[0],
             images[1],
             images[2],
-            images[3],
+            images[23],
             images[4],
             images[5],
-            images[6],
+            images[20],
             images[7],
             images[8],
             images[9],
@@ -188,40 +149,52 @@ export default function Home() {
         />
         <Column
           images={[
-            images[6],
-            images[7],
-            images[8],
-            images[9],
-            images[10],
-            images[11],
-            images[6],
-            images[7],
-            images[8],
-            images[9],
-            images[10],
-            images[11],
+            images[12],
+            images[13],
+            images[14],
+            images[15],
+            images[16],
+            images[17],
+            images[18],
+            images[13],
+            images[25],
+            images[21],
+            images[22],
+            images[23],
           ]}
           y={y2}
         />
           <Column
             images={[
-              images[11],
+              images[0],
+              images[1],
+              images[2],
+              images[3],
+              images[10],
+              images[7],
               images[12],
-              images[13],
-              images[14],
-              images[15],
-              images[16],
+              images[2],
+              images[8],
+              images[9],
+              images[10],
+              images[11],
             ]}
             y={y3}
           />
           <Column
             images={[
+              images[0],
+              images[1],
+              images[2],
+              images[2],
+              images[8],
               images[11],
-              images[12],
-              images[13],
-              images[14],
-              images[15],
-              images[16],
+              images[9],
+              images[22],
+              images[8],
+              images[9],
+              images[10],
+              images[11],
             ]}
             y={y4}
           />
@@ -229,7 +202,7 @@ export default function Home() {
       <div className="flex justify-center relative z-20 bg-[#1A1A1A]">
         <CTA />
       </div>
-      <div className="h-[100vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
+      <div className="h-[110vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
       <Footer />
     </main>
   );

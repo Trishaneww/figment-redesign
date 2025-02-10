@@ -7,6 +7,7 @@ import { useToast } from './hooks/use-toast'
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 const ContactHero = () => {
     const [emailError, setEmailError] = useState("")
@@ -46,24 +47,36 @@ const ContactHero = () => {
     <div className="flex flex-col items-center lg:flex-row justify-center lg:items-start gap-12 lg:h-[100vh] py-24 lg:pt-32 px-6 lg:px-12 mt-24">
         <section className="flex flex-col items-start gap-4 max-w-[600px]">
             <div className="flex gap-2 items-center">
-                <section className="">
+                <Image
+                    width={80}
+                    height={80}
+                    src="/assets/images/headshot.png"
+                    alt="headline photo" 
+                />
+                <section className="border-[1px] border-gray-500 bg-[#242424] flex flex-col p-2 px-4 rounded-xl">
+                    <p className="text-sm lg:text-base">"The entire process was seamless. They understood our goals and delivered a website that perfectly reflects our brand."</p>
+                    <p className="text-sm lg:text-base text-slate-50">- Yohan Wijeyawickrema, CEO @YASolutionsInc</p>
                     
                 </section>
             </div>
-            <p className="text-3xl lg:text-4xl font-semibold">Get a taste of Figment with a free hero redesign.</p>
-            <p className="text-lg">Get a free test run before you commit to working with us on a full-scale redesign. We'll give you the free, personalized insights you need to boost your hero's conversion rate.</p>
+            <p className="text-3xl lg:text-4xl font-semibold">Unlock Your Websites Potential with a Free Audit</p>
+            <p className="text-lg">See how we can improve your site before committing to a full redesign. Get personalized insights to boost performance and conversions—completely free.</p>
             <ul className="flex flex-col text-lg gap-2">
                 <li className="flex gap-2 items-center text-base lg:text-lg">
                     <div className="flex justify-center items-center bg-green-500 min-w-[20px] min-h-[20px] rounded-full text-black"><Check size={15}/></div>
                     <p>Fully designed, custom mobile and desktop mockups</p>
                 </li>
+                {/* <li className="flex gap-2 items-center text-base lg:text-lg">
+                    <div className="flex justify-center items-center bg-green-500 min-w-[20px] min-h-[20px] rounded-full text-black"><Check size={15}/></div>
+                    <p>In-depth website performance analysis</p>
+                </li> */}
                 <li className="flex gap-2 items-center text-base lg:text-lg">
                     <div className="flex justify-center items-center bg-green-500 min-w-[20px] min-h-[20px] rounded-full text-black"><Check size={15}/></div>
-                    <p>Annotated design changes</p>
+                    <p>SEO & conversion optimization insights</p>
                 </li>
                 <li className="flex gap-2 items-center text-base lg:text-lg">
                     <div className="flex justify-center items-center bg-green-500 min-w-[20px] min-h-[20px] rounded-full text-black"><Check size={15}/></div>
-                    <p>Clear, concise and persuasive copywriting</p>
+                    <p>Engaging & effective copywriting </p>
                 </li>
                 <li className="flex gap-2 items-center text-base lg:text-lg">
                     <div className="flex justify-center items-center bg-green-500 min-w-[20px] min-h-[20px] rounded-full text-black"><Check size={15}/></div>
@@ -72,7 +85,7 @@ const ContactHero = () => {
             </ul>
         </section>
 
-        <form onSubmit={sendEmail} className="w-full max-w-[600px] lg:max-h-[940px] flex flex-col gap-2 rounded-2xl px-4 lg:px-10 py-6 pt-6 border-[1px] border-gray-500 text-white">  
+        <form onSubmit={sendEmail} className="w-full max-w-[600px] lg:max-h-[940px] flex flex-col gap-2 rounded-xl px-4 lg:px-10 py-6 pt-6 border-[1px] border-gray-500 bg-[#242424] text-white">  
             <div className="flex flex-col gap-4 mt-8">
                 <div className="flex flex-col items-start gap-1">
                     <p>Full Name</p>

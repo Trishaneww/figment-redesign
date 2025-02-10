@@ -1,27 +1,30 @@
 export const images = [
     "/assets/images/proj1.png",
     "/assets/images/proj2.png",
+    "/assets/images/proj3.png",
+    "/assets/images/proj4.png",
+    "/assets/images/proj5.png",
+    "/assets/images/proj6.png",
+    "/assets/images/proj7.png",
+    "/assets/images/proj8.png",
     "/assets/images/proj9.png",
     "/assets/images/proj10.png",
+    "/assets/images/6.jpg",
     "/assets/images/proj11.png",
     "/assets/images/proj12.png",
     "/assets/images/proj13.png",
     "/assets/images/proj14.png",
     "/assets/images/proj15.png",
-    "/assets/images/6.jpg",
     "/assets/images/proj16.png",
     "/assets/images/proj17.png",
-    "/assets/images/proj24.png",
     "/assets/images/proj18.png",
-    "/assets/images/proj19.png",
     "/assets/images/proj20.png",
-    "/assets/images/proj17.png",
-    "/assets/images/proj18.png",
-    "/assets/images/proj19.png",
-    "/assets/images/proj20.png",
-    "/assets/images/proj5.png",
-    "/assets/images/proj6.png",
     "/assets/images/proj21.png",
+    "/assets/images/proj22.png",
+    "/assets/images/proj23.png",
+    "/assets/images/proj24.png",
+    "/assets/images/proj21.png",
+    "/assets/images/proj19.png",
   ]
 
 export const hero = [
@@ -36,22 +39,34 @@ export const work = [
   {
     id:4,
     src1: '/assets/images/mobile6.png',
-    src2: '/assets/images/proj1.png'
+    src2: '/assets/images/proj1.png',
+    title: "Essentials Interior Design",
+    desc: "A sleek and modern website for an interior design company, showcasing their latest work with a visually rich portfolio that highlights their expertise in transforming spaces.",
+    href: '',
   },
   {
     id:1,
     src1: '/assets/images/mobile1.png',
-    src2: '/assets/images/proj5.png'
+    src2: '/assets/images/proj5.png',
+    title: "YA Solutions Inc",
+    desc: "A dynamic digital marketing agency website designed to showcase their services, case studies, and innovative strategies for helping businesses grow online.",
+    href: 'https://www.yasolutionsinc.com/',
   },
   {
     id:2,
     src1: '/assets/images/mobile3.png',
-    src2: '/assets/images/proj6.png'
+    src2: '/assets/images/proj6.png',
+    title: "Growbyte Marketing",
+    desc: "A results-driven marketing website tailored for car dealerships, featuring lead-generation tools and data-driven solutions to help dealerships attract and convert customers.",
+    href: 'https://growbyte.ca/',
   },
   {
     id:3,
-    src1: '/assets/images/mobile4.png',
-    src2: '/assets/images/proj23.png'
+    src1: '/assets/images/mobile7.png',
+    src2: '/assets/images/proj23.png',
+    title: "The Systems Academy",
+    desc: "A full-fledged educational platform offering in-depth courses on NBA sports betting, complete with interactive modules, expert insights, and a structured learning experience.",
+    href: 'https://systems-academy.vercel.app/',
   },
 ]
 
