@@ -53,10 +53,10 @@ const Work = () => {
       <Navbar />
       <section className="h-[100vh] flex items-center justify-center text-[#F5EADF] bg-[#1A1A1A] relative z-30">
         <div
-          className="relative flex flex-col gap-2 justify-center items-center z-10 -mt-24 text-base transform translate"
+          className="relative flex flex-col gap-2 justify-center items-center z-10 -mt-24 text-base lg:text-lg transform translate"
           style={{ transform: `translateY(${offset}px)` }}
         >
-          <p className="text-indigo-300">FIGMENT STUDIOS</p>
+          <p className="">FIGMENT STUDIOS</p>
           <p className="text-4xl lg:text-8xl font-light">
             SELECTED <span className="font-extrabold">WORK</span>
           </p>
@@ -78,7 +78,7 @@ const Work = () => {
         <div className="flex justify-center relative z-20 bg-[#1A1A1A]">
           <CTA />
         </div>
-        <div className="h-[100vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
+        <div className="h-[110vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
         <Footer />
       </section>
     </div>

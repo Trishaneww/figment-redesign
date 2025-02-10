@@ -10,7 +10,6 @@ const Links = () => {
       <Navbar />
       <Linksubpage />
       <Toaster />
-
     </div>
   )
 }

@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <div className="flex gap-8 items-center text-slate-50">
           <Link href='mailto:trishane@figmentstudios.ca' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")}>Contact Us</Link>
-          <Link href='/contact' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")}>Receive  Free Quote</Link>
+          <Link href='/contact' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")}>Get a Free Audit</Link>
         </div>
 
 
@@ -50,10 +50,12 @@ const Navbar = () => {
         
         </label>
         <div className="flex flex-col gap-2">
-          <Link href="/" className="text-slate-50 text-sm">HOME</Link> 
-          <Link href="/" className="text-slate-50 text-sm -mt-4">ABOUT US</Link>
-          <Link href="/#options" className="text-slate-50 text-sm -mt-4">OPTIONS</Link>
-          <Link href="/contact" className="text-slate-50 text-sm -mt-4">CONTACT</Link>
+          <Link href="/" className="text-slate-50 text-sm">Home</Link> 
+          <Link href="/work" className="text-slate-50 text-sm -mt-4">Gallery</Link>
+          <Link href="/pricing" className="text-slate-50 text-sm -mt-4">Pricing</Link>
+          <Link href="/contact">
+            <Button className="w-[200px] h-[50px] bg-slate-50 text-slate-950 text-lg">Get a Free Redesign</Button>
+          </Link>
         </div>
 
       </div>
