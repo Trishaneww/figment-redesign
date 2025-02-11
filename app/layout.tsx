@@ -9,7 +9,7 @@ const inter = Host_Grotesk({ weight: ["300", "400", "500", "600", "700", "800"],
 export const metadata: Metadata = {
   title: "Figment Studios ",
   description:
-    "",
+    "We design and develop custom, high-performing websites tailored to help your business stand out and grow.",
   icons: {
     icon: "/assets/icons/favicon.ico",
   },

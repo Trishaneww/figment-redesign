@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/page.module.scss";
 import Image from "next/image";
-import { hero, images } from "@/data";
+import { hero } from "@/data";
 import { Button } from "./ui/button";
 import Link from "next/link";
 

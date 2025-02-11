@@ -47,9 +47,7 @@ export default function ParallaxSections() {
               <p>Web Design | Web Development</p>
               <h2 className="text-3xl font-bold text-[#F5EADF] mt-4">{work.title}</h2>
               <p className="mt-2 text-gray-50">{work.desc}</p>
-              <Link href={work.href}  className="flex items-center gap-2 text-slate-50">
-                <p className="">In development</p>
-              </Link>
+              <p className="text-slate-50">In development</p>
              
             </div>
           </div>
@@ -73,7 +71,7 @@ export default function ParallaxSections() {
               <p>Web Design | Web Development</p>
               <h2 className="text-3xl font-bold text-[#F5EADF] mt-4">{work.title}</h2>
               <p className="mt-2 text-gray-50">{work.desc}</p>
-              <Link href={work.href}  className="flex items-center gap-2 text-slate-50 group">
+              <Link href={work.href}  className="flex items-center gap-2 text-slate-50 group" aria-label="Link leads to live website">
                 <div className="bg-slate-50 h-[1.4px] w-[25px] group-hover:w-[40px] duration-300"></div>
                 <p>View Live Site</p>
                 <SquareArrowOutUpRight />
