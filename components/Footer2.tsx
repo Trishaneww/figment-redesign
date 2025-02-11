@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -18,7 +17,7 @@ const Footer2 = () => {
                 /> */}
             <p className="text-2xl font-extrabold">FIGMENT STUDIOS</p>
             <p className="text-base">We design and develop custom, high-performing websites tailored to help your business stand out and grow.</p>
-            <Link href="/contact" className="flex items-center gap-1 text-base text-slate-50 group">
+            <Link href="/contact" className="flex items-center gap-1 text-base text-slate-50 group" aria-label="Link leads to contact page">
             <p>Get Started</p>
             <ArrowRight className="group-hover:ml-2 duration-200" />
             </Link>
@@ -41,7 +40,7 @@ const Footer2 = () => {
                     {/* <p>3</p> */}
                     <div className="flex flex-col">
                         <ul className="text-slate-50 text-base flex flex-col gap-2">
-                            <li><Link href="mailto:mediabystephenson@gmail.com" target="_blank">trishane@figmentstudios.ca</Link></li>
+                            <li><Link href="mailto:mediabystephenson@gmail.com" target="_blank" aria-label="Link leads to our email">trishane@figmentstudios.ca</Link></li>
                             <li>(647)-472-4119</li>
                             <li><Link href="/https://www.instagram.com/stephenson.media/" target="_blank" aria-label="View more of our work on instagram">Instagram</Link></li>
                         </ul>

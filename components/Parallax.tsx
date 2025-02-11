@@ -25,7 +25,7 @@ export default function Home() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
-  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 1.6]);
+  // const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 1.6]);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -70,7 +70,7 @@ export default function Home() {
       <div className="lg:px-24 relative z-20 bg-[#1A1A1A] px-6 pb-10 lg:pb-20 pt-20 lg:pt-44">
         <section className="flex flex-col gap-2 text-[#F5EADF]">
           <p className="text-3xl lg:text-4xl lg:w-[58%]">
-          Welcome to Figment Studios! We're a website development company founded by Trishane Anthony. We specialize in custom websites that help businesses stand out and thrive online.
+          Welcome to Figment Studios! We&apos;re a website development company founded by Trishane Anthony. We specialize in custom websites that help businesses stand out and thrive online.
           </p>
           <div className="flex items-center gap-2 text-lg group">
             <div className="bg-slate-50 h-[1.4px] w-[25px]  group-hover:w-[40px] duration-300"></div>
@@ -118,7 +118,7 @@ export default function Home() {
                 </li>
                 <li className="flex gap-2 items-center text-lg">
                   <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                  <p>Lightning-fast performance, every time</p>
+                  <p>Optimized, high-conversion eCommerce solutions</p>
                 </li>
               </ul>
             </div>
@@ -202,7 +202,7 @@ export default function Home() {
       <div className="flex justify-center relative z-20 bg-[#1A1A1A]">
         <CTA />
       </div>
-      <div className="h-[110vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
+      <div className="h-[110vh] lg:h-[80vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
       <Footer />
     </main>
   );

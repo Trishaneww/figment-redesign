@@ -135,7 +135,7 @@ const Pricing = () => {
         <div className="flex justify-center relative z-20 bg-[#1A1A1A]">
           <CTA />
         </div>
-        <div className="h-[110vh] lg:h-[60vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
+        <div className="h-[110vh] lg:h-[80vh] flex justify-center text-slate-950 relative z-10 bg-[#1A1A1A]"></div>
         <Footer />
       </main>
     </div>

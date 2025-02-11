@@ -20,32 +20,35 @@ interface ColumnProps {
 }
 
 export default function Linksubpage() {
-  const  [error, setError] = useState("");
+  const [error, setError] = useState("");
 
-  const { toast } = useToast()
+  const { toast } = useToast();
 
-  const sendEmail = (e:any) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     try {
       if (e.target.email.value === "") {
-          setError("Email is required")
+        setError("Email is required");
       } else {
+        emailjs.sendForm(
+          "service_luvg8op",
+          "template_oirz684",
+          e.target,
+          "1MxDwCSvQF6Leln4f"
+        );
+        e.target.reset();
+        setError("");
 
-          emailjs.sendForm('service_luvg8op', 'template_oirz684' , e.target , '1MxDwCSvQF6Leln4f');
-           e.target.reset()
-           setError("")
-
-          toast({
-              title: "Email Sent",
-              description: "We will get back to you shortly",
-    })
-
+        toast({
+          title: "Email Sent",
+          description: "We will get back to you shortly",
+        });
       }
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
 
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
@@ -58,7 +61,6 @@ export default function Linksubpage() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
-  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 1.6]);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -111,35 +113,53 @@ export default function Linksubpage() {
         <p>We build amazing websites</p>
 
         <div className="flex flex-col gap-2 w-full items-center mt-6">
-          <Link href="/" className="w-full flex justify-center items-center">
+          <Link href="/" className="w-full flex justify-center items-center" aria-label="Link leads to home website">
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <Home />
               Studio Website
             </Button>
           </Link>
 
-          <Link href="/pricing" className="w-full flex justify-center items-center">
+          <Link
+            href="/pricing"
+            className="w-full flex justify-center items-center"
+            aria-label="Link leads to pricing page"
+          >
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <DollarSign />
               Website Pricing
             </Button>
           </Link>
 
-          <Link href="/contact" className="w-full flex justify-center items-center">
+          <Link
+            href="/contact"
+            className="w-full flex justify-center items-center"
+            aria-label="Link leads to contact page"
+          >
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <Send />
               Get a Free Quote Today
             </Button>
           </Link>
 
-          <Link href="https://www.linkedin.com/in/tw11/" target="_blank" className="w-full flex justify-center items-center">
+          <Link
+            href="https://www.linkedin.com/in/tw11/"
+            target="_blank"
+            className="w-full flex justify-center items-center"
+            aria-label="Link leads to our founder, Trishanes Linkedin"
+          >
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <Linkedin />
               Linkedin
             </Button>
           </Link>
 
-          <Link href="https://www.instagram.com/figmentstudios.ca" target="_blank" className="w-full flex justify-center items-center">
+          <Link
+            href="https://www.instagram.com/figmentstudios.ca"
+            target="_blank"
+            className="w-full flex justify-center items-center"
+            aria-label="Link leads to instagram page"
+          >
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <Instagram />
               Instagram
@@ -147,11 +167,16 @@ export default function Linksubpage() {
           </Link>
         </div>
 
-        <form onSubmit={sendEmail} className="flex flex-col border-[1px] border-gray-500 w-full max-w-[400px] mt-6 rounded-lg px-6 py-4">
-            <div className="flex flex-col items-center text-center gap-2">
-                <p className="text-2xl font-semibold w-[70%]">Lots more Coming Soon 🚀</p>
-                <p>Sign up now to be updated when we drop something new.</p>
-            </div>
+        <form
+          onSubmit={sendEmail}
+          className="flex flex-col border-[1px] border-gray-500 w-full max-w-[400px] mt-6 rounded-lg px-6 py-4"
+        >
+          <div className="flex flex-col items-center text-center gap-2">
+            <p className="text-2xl font-semibold w-[70%]">
+              Lots more Coming Soon 🚀
+            </p>
+            <p>Sign up now to be updated when we drop something new.</p>
+          </div>
           <div className="flex flex-col gap-4 mt-8">
             <div className="flex flex-col items-start gap-1">
               <p>Full Name</p>
@@ -185,62 +210,40 @@ export default function Linksubpage() {
       <div className="space-y-16 lg:space-y-20 bg-[#1A1A1A] py-2 relative z-30 h-[2vh]"></div>
 
       <div ref={gallery} className="gallery relative z-20 bg-[#1A1A1A]">
-         <Column
-                  images={[
-                    images[0],
-                    images[1],
-                    images[2],
-                    images[3],
-                    images[4],
-                    images[5],
-                    images[6],
-                    images[7],
-                    images[8],
-                    images[9],
-                    images[10],
-                    images[11],
-                  ]}
-                  y={y}
-                />
-                <Column
-                  images={[
-                    images[6],
-                    images[7],
-                    images[8],
-                    images[9],
-                    images[10],
-                    images[11],
-                    images[6],
-                    images[7],
-                    images[8],
-                    images[9],
-                    images[10],
-                    images[11],
-                  ]}
-                  y={y2}
-                />
-                  <Column
-                    images={[
-                      images[11],
-                      images[12],
-                      images[13],
-                      images[14],
-                      images[15],
-                      images[16],
-                    ]}
-                    y={y3}
-                  />
-                  <Column
-                    images={[
-                      images[11],
-                      images[12],
-                      images[13],
-                      images[14],
-                      images[15],
-                      images[16],
-                    ]}
-                    y={y4}
-                  />
+        <Column
+          images={[
+            images[0],
+            images[1],
+            images[2],
+            images[23],
+            images[4],
+            images[5],
+            images[20],
+            images[7],
+            images[8],
+            images[9],
+            images[10],
+            images[11],
+          ]}
+          y={y}
+        />
+        <Column
+          images={[
+            images[12],
+            images[13],
+            images[14],
+            images[15],
+            images[16],
+            images[17],
+            images[18],
+            images[13],
+            images[25],
+            images[21],
+            images[22],
+            images[23],
+          ]}
+          y={y2}
+        />
       </div>
       <div className="flex justify-center relative z-20 bg-[#1A1A1A] text-slate-50">
         <CTA />

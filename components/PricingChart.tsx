@@ -1,11 +1,5 @@
 import React from 'react'
 import '../styles/global.scss';
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
 import { GiCheckMark } from 'react-icons/gi';
 import { pricingChart } from '@/data';
 import { GoDash } from "react-icons/go";
@@ -14,9 +8,6 @@ const PricingChart = () => {
   return (
     <section className="hidden md:flex flex-col w-full min-w-[600px] mx-2 lg:mx-0 lg:w-4/6 mt-40 text-slate-50 text-lg bg-[#1A1A1A] overflow-x-scroll">
         <section className="flex font-bold text-xl">
-            {/* <div className="h-[70px] w-[26%] justify-start px-4">
-                <p>Compare Features</p>
-            </div> */}
              <div className="h-[70px]  w-[26%] flex flex-col gap-2  items-start justify-center pl-4">
                 <p className="text-lg lg:text-2xl text-center">Compare Features</p>
                 

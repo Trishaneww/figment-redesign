@@ -1,7 +1,6 @@
 import Linksubpage from '@/components/Linkssubpage'
 import Navbar from '@/components/Navbar'
 import { Toaster } from '@/components/ui/toaster'
-import { Contact } from 'lucide-react'
 import React from 'react'
 
 const Links = () => {

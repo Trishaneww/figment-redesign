@@ -1,16 +1,7 @@
 import React from 'react'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
 import { Button } from './ui/button'
 import { pricingData } from '@/data';
 import '../styles/global.scss';
-import { GiCheckMark } from 'react-icons/gi';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
   
@@ -28,9 +19,9 @@ const PriceCards = () => {
                     <p className="font-bold text-3xl lg:text-4xl">{card.title}</p>
                     <p className="h-[120px] text-center mt-2">{card.desc}</p>
                     <p className="text-2xl lg:text-3xl font-semibold">{card.price}</p>
-                    <Link href="/contact" className="w-full"> <Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
+                    <Link href="/contact" className="w-full"> <Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group" aria-label="Link leads to contact page">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
                     <footer className="mt-4">
-                        <Link href='#features' className="underline mt-4">See all features</Link>
+                        <Link href='#features' className="underline mt-4" aria-label="See full list of features for this pricing plan">See all features</Link>
                     </footer>
                 </div>
             ))}
@@ -40,9 +31,9 @@ const PriceCards = () => {
                     <p className="font-bold text-3xl lg:text-4xl">{card.title}</p>
                     <p className="h-[120px] text-center mt-2">{card.desc}</p>
                     <p className="text-2xl lg:text-3xl font-semibold">{card.price}</p>
-                    <Link href="/contact" className="w-full"><Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
+                    <Link href="/contact" className="w-full"><Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group" aria-label="Link leads to contact page">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
                     <footer className="mt-4">
-                        <Link href='#features' className="underline mt-4">See all features</Link>
+                        <Link href='#features' className="underline mt-4" aria-label="See full list of features for this pricing plan">See all features</Link>
                     </footer>
 
 
@@ -53,9 +44,9 @@ const PriceCards = () => {
                     <p className="font-bold text-3xl lg:text-4xl">{card.title}</p>
                     <p className="h-[120px] text-center mt-2">{card.desc}</p>
                     <p className="text-2xl lg:text-3xl font-semibold">{card.price}</p>
-                    <Link href="/contact" className="w-full"> <Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
+                    <Link href="/contact" className="w-full"> <Button className="w-full h-[50px] bg-slate-50 text-slate-950 mt-4 text-base group" aria-label="Link leads to contact page">Get Started <ChevronRight className="group-hover:ml-1 -ml-1 duration-200" /></Button></Link>
                     <footer className="mt-4">
-                        <Link href='#features' className="underline mt-4">See all features</Link>
+                        <Link href='#features' className="underline mt-4" aria-label="See full list of features for this pricing plan">See all features</Link>
                     </footer>
 
 
