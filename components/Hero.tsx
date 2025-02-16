@@ -22,25 +22,25 @@ const Hero = () => {
             className="relative w-[150px] h-[50px] rounded-lg border-[1px] border-slate-50 overflow-hidden group z-10"
           >
             <Button className="absolute top-0 h-full w-full flex justify-center items-center font-semibold tracking-wide bg-transparent">
-              <p className="z-10 group-hover:text-black duration-700 transition-all text-lg">
+              <p className="z-10 group-hover:text-black duration-700 transition-all text-base lg:text-lg">
                 View Pricing
               </p>
             </Button>
             <p className="absolute top-0 h-full w-full rounded-lg bg-slate-50 flex justify-center items-center font-semibold tracking-wide -ml-80 group-hover:ml-0 duration-700 transition-all"></p>
           </Link>
           <Link href="/contact">
-            <Button className="w-[200px] h-[50px] bg-slate-50 text-slate-950 text-lg">
+            <Button className="w-[200px] h-[50px] bg-slate-50 text-slate-950 text-base lg:text-lg">
               Get a Free Redesign
             </Button>
           </Link>
         </div>
       </div>
-      <section className="flex gap-6 justify-center items-center overflow-hidden relative mt-20 lg:hidden">
+      <section className="flex gap-2 justify-center items-center overflow-hidden relative mt-20 lg:hidden">
         {hero.map((src, idx) => (
           <Image
-            width={1000}
-            height={1000}
-            src="/assets/images/6.jpg"
+            width={300}
+            height={300}
+            src={src}
             alt="mobile view landing page"
             className="rounded-xl"
             priority
@@ -51,12 +51,12 @@ const Hero = () => {
         {/* Right Fade Effect */}
         <div className="absolute inset-y-0 right-0 w-[6rem] lg:w-[40rem] bg-gradient-to-l from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
       </section>
-      <section className="hidden lg:flex gap-6 justify-center items-center overflow-hidden relative mt-20">
+      <section className="hidden lg:flex gap-4 justify-center items-center overflow-hidden relative mt-20">
         {hero.map((src, idx) => (
           <Image
-            width={1000}
-            height={1000}
-            src="/assets/images/6.jpg"
+            width={750}
+            height={750}
+            src={src}
             alt="mobile view landing page"
             className="rounded-xl"
             priority

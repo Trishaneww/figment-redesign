@@ -4,7 +4,6 @@ import "../styles/global.scss";
 import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
-import { images } from "@/data";
 import { DollarSign, Home, Instagram, Linkedin, Send } from "lucide-react";
 import CTA from "./CTA";
 import emailjs from "@emailjs/browser";
@@ -13,6 +12,8 @@ import Footer from "./Footer";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import Link from "next/link";
+import MobileGallery from "./MobileGallery";
+import LaptopGallery from "./Practice";
 
 interface ColumnProps {
   images: string[];
@@ -113,7 +114,11 @@ export default function Linksubpage() {
         <p>We build amazing websites</p>
 
         <div className="flex flex-col gap-2 w-full items-center mt-6">
-          <Link href="/" className="w-full flex justify-center items-center" aria-label="Link leads to home website">
+          <Link
+            href="/"
+            className="w-full flex justify-center items-center"
+            aria-label="Link leads to home website"
+          >
             <Button className="w-full max-w-[400px] h-[50px] text-slate-50 border-[1px] border-gray-500 bg-[#242424]">
               <Home />
               Studio Website
@@ -207,44 +212,16 @@ export default function Linksubpage() {
         </form>
       </div>
 
-      <div className="space-y-16 lg:space-y-20 bg-[#1A1A1A] py-2 relative z-30 h-[2vh]"></div>
+      <div className="space-y-16 lg:space-y-20 bg-[#1A1A1A] py-20 relative z-30"></div>
 
-      <div ref={gallery} className="gallery relative z-20 bg-[#1A1A1A]">
-        <Column
-          images={[
-            images[0],
-            images[1],
-            images[2],
-            images[23],
-            images[4],
-            images[5],
-            images[20],
-            images[7],
-            images[8],
-            images[9],
-            images[10],
-            images[11],
-          ]}
-          y={y}
-        />
-        <Column
-          images={[
-            images[12],
-            images[13],
-            images[14],
-            images[15],
-            images[16],
-            images[17],
-            images[18],
-            images[13],
-            images[25],
-            images[21],
-            images[22],
-            images[23],
-          ]}
-          y={y2}
-        />
+      <div className="hidden lg:flex relative z-20 bg-[#1A1A1A]">
+        <LaptopGallery />
       </div>
+
+      <div className="lg:hidden relative z-20 bg-[#1A1A1A]">
+        <MobileGallery />
+      </div>
+
       <div className="flex justify-center relative z-20 bg-[#1A1A1A] text-slate-50">
         <CTA />
       </div>

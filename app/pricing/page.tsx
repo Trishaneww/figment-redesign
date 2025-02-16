@@ -3,6 +3,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import MobilePrice from "@/components/MobilePrice";
 import Navbar from "@/components/Navbar";
+import Practice from "@/components/Practice";
 import PriceCards from "@/components/Pricing";
 import PricingChart from "@/components/PricingChart";
 import Image from "next/image";
@@ -10,32 +11,10 @@ import { useEffect, useState } from "react";
 
 const Pricing = () => {
   const [offset, setOffset] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => setOffset(window.scrollY * -0.2);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const [offsets, setOffsets] = useState(Array(4).fill(0));
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const newOffsets = Array(4)
-        .fill(0)
-        .map((_, index) => {
-          const section = document.getElementById(`section-${index}`);
-          if (section) {
-            const rect = section.getBoundingClientRect();
-            return rect.top * 0.2; // Adjust speed
-          }
-          return 0;
-        });
-      setOffsets(newOffsets);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
     <div className="flex flex-col bg-[#1A1A1A] text-[#F5EADF] pricing-homepage">
@@ -121,7 +100,6 @@ const Pricing = () => {
           </section>
         </div>
         <PriceCards />
-
         <div className="relative z-30 bg-[#1A1A1A]">
           <MobilePrice />
         </div>
