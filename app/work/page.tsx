@@ -21,7 +21,7 @@ const Work = () => {
           className="relative flex flex-col gap-2 justify-center items-center z-10 -mt-24 text-base lg:text-lg transform translate"
           style={{ transform: `translateY(${offset}px)` }}
         >
-          <p className="">FIGMENT STUDIOS</p>
+          <p className="">OUR PORTFOLIO</p>
           <p className="text-4xl lg:text-8xl font-light">
             SELECTED <span className="font-extrabold">WORK</span>
           </p>

@@ -123,7 +123,6 @@ const MobilePrice = () => {
                                     ))}
                         </AccordionContent>
                     </AccordionItem>
-
         </Accordion>
         </div>
     </div>

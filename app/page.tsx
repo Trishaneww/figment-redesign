@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Home from '@/components/Parallax'
+import Practice from '@/components/Practice'
 import React from 'react'
 
 

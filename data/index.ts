@@ -28,11 +28,11 @@ export const images = [
   ]
 
 export const hero = [
-    "/assets/images/proj1.png",
-    "/assets/images/proj5.png",
-    "/assets/images/proj9.png",
-    "/assets/images/proj13.png",
-    "/assets/images/proj8.png",
+    "/assets/images/hero3.png",
+    "/assets/images/hero1.png",
+    "/assets/images/hero2.png",
+    "/assets/images/hero4.png",
+    "/assets/images/hero5.png",
 ]
 
 export const work = [
@@ -226,3 +226,155 @@ export const pricingChart = [
       values: [true,false,false,false]
     },
   ]
+
+
+  // "use client";
+  
+  // import { useEffect, useRef } from "react";
+  // import Image from "next/image";
+  
+  // // Image data (5 rows of 4 images, each with a speed factor)
+  // const images = [
+  //   [
+  //     { src: "/assets/images/hero3.png", speed: -0.3 },
+  //     { src: "/assets/images/hero2.png", speed: 0.1 },
+  //     { src: "/assets/images/proj24.png", speed: 0.1 },
+  //     { src: "/assets/images/proj1.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //   ],
+  //   [
+  //     { src: "/assets/images/proj1.png", speed: -0.05 },
+  //     { src: "/assets/images/proj1.png", speed: 0.05 },
+  //     { src: "/assets/images/proj1.png", speed: 0.05 },
+  //     { src: "/assets/images/proj1.png", speed: 0.05 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+      
+  //   ],
+  //   [
+  //     { src: "/assets/images/hero3.png", speed: -0.3 },
+  //     { src: "/assets/images/hero2.png", speed: 0.1 },
+  //     { src: "/assets/images/proj24.png", speed: 0.1 },
+  //     { src: "/assets/images/proj1.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //   ],
+  //   [
+  //     { src: "/assets/images/proj8.png", speed: -0.05 },
+  //     { src: "/assets/images/proj8.png", speed: 0.05 },
+  //     { src: "/assets/images/proj8.png", speed: 0.05 },
+  //     { src: "/assets/images/proj8.png", speed: 0.05 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //     { src: "/assets/images/proj8.png", speed: 0.1 },
+  //   ],
+  //   // [
+  //   //   { src: "/assets/images/proj8.png", speed: 0.14 },
+  //   //   { src: "/assets/images/proj8.png", speed: 0.24 },
+  //   //   { src: "/assets/images/proj8.png", speed: -0.34 },
+  //   //   { src: "/assets/images/proj8.png", speed: 0.44 },
+  //   // ],
+  // ];
+  
+  // // Floating images (absolute, randomly placed)
+  // const floatingImages = [
+  //   { src: "/assets/images/mobile7.png", speed: -0.05, top: "5%", left: "25%" },
+  //   { src: "/assets/images/mobile7.png", speed: -0.05, top: "20%", left: "60%" },
+  //   { src: "/assets/images/mobile7.png", speed: -0.05, top: "5%", left: "40%" },
+  //   { src: "/assets/images/mobile7.png", speed: -0.05, top: "12%", left: "70%" },
+  //   { src: "/assets/images/mobile7.png", speed: -0.05, top: "5%", left: "85%" },
+  // ];
+  
+  // const ParallaxGallery = () => {
+  //   // Using useRef for image and floating image elements
+  //   const imageRefs = useRef<(HTMLDivElement | null)[][]>(
+  //     Array.from({ length: 5 }, () => Array(4).fill(null))
+  //   );
+  //   const floatingRefs = useRef<(HTMLDivElement | null)[]>(Array(5).fill(null));
+  
+  //   useEffect(() => {
+  //     let lastScrollY = window.scrollY;
+  //     let ticking = false; // To throttle the scroll event
+  
+  //     const updateParallax = () => {
+  //       if (!ticking) {
+  //         window.requestAnimationFrame(() => {
+  //           const scrollY = window.scrollY;
+  
+  //           // Move grid images
+  //           imageRefs.current.forEach((column, colIndex) => {
+  //             column.forEach((img, rowIndex) => {
+  //               if (img) {
+  //                 const speed = images[colIndex][rowIndex].speed;
+  //                 img.style.transform = `translateY(${scrollY * speed}px)`;
+  //               }
+  //             });
+  //           });
+  
+  //           // Move floating images
+  //           floatingRefs.current.forEach((img, index) => {
+  //             if (img) {
+  //               const speed = floatingImages[index].speed;
+  //               img.style.transform = `translate3d(0, ${scrollY * speed}px, 0)`;
+  //             }
+  //           });
+  
+  //           lastScrollY = scrollY;
+  //           ticking = false;
+  //         });
+  
+  //         ticking = true;
+  //       }
+  //     };
+  
+  //     const handleScroll = () => {
+  //       updateParallax();
+  //     };
+  
+  //     window.addEventListener("scroll", handleScroll);
+  
+  //     return () => {
+  //       window.removeEventListener("scroll", handleScroll);
+  //     };
+  //   }, []);
+  
+  //   return (
+  //     <div className="relative w-full overflow-hidden h-[170vh] bg-gray-400 mt-28">
+  //       {/* Floating Images */}
+  //       {/* {floatingImages.map(({ src, top, left }, index) => (
+  //           <Image src={src} alt={`Floating ${index}`} key={index}
+  //           ref={(el) => { floatingRefs.current[index] = el; }} 
+  //           style={{ top, left }} width={200} height={200}  className="absolute rounded-lg shadow-lg  will-change-transform z-40" priority />
+  //       ))} */}
+  
+  //       {/* Grid of images */}
+  //       <div className="flex justify-center gap-6">
+  //         {images.map((column, colIndex) => (
+  //           <div key={colIndex} className="flex flex-col gap-6 will-change-transform" ref={(el) => { imageRefs.current[colIndex][0] = el; }}>
+  //             {column.map(({ src }, rowIndex) => (
+  //                 <Image src={src} key={rowIndex}
+  //                  alt={`Parallax ${colIndex}-${rowIndex}`} width={1000} height={1000} className="relative rounded-lg shadow-lg overflow-hidden will-change-transform" priority />
+             
+  //             ))}
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   );
+  // };
+  
+  // export default ParallaxGallery;
+  

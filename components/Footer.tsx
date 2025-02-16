@@ -21,10 +21,10 @@ const Footer = () => {
                     {/* <p>4</p> */}
                     <div className="flex flex-col">
                         <ul className="text-slate-50 text-base flex flex-col gap-2">
-                            <li><Link href="/#services">Services</Link></li>
-                            <li><Link href="/work">Gallery</Link></li>
-                            <li><Link href="/pricing"></Link>Pricing</li>
-                            <li><Link href="/#services">Get a Free Audit</Link></li>
+                            <li><Link href="/#services" aria-label="navigation link">Services</Link></li>
+                            <li><Link href="/work" aria-label="navigation link">Gallery</Link></li>
+                            <li><Link href="/pricing" aria-label="navigation link"></Link>Pricing</li>
+                            <li><Link href="/#services" aria-label="navigation link">Get a Free Audit</Link></li>
                         </ul>
                     </div>
                 </div>
