@@ -17,14 +17,17 @@ const images = [
     { src: "/assets/images/proj14.png", speed: 0.1 },
     { src: "/assets/images/proj8.png", speed: 0.1 },
     { src: "/assets/images/proj18.png", speed: 0.1 },
+    { src: "/assets/images/hero3.png", speed: 0.5 },
+    { src: "/assets/images/hero2.png", speed: 0.1 },
+    { src: "/assets/images/proj5.png", speed: 0.1 },
   ],
   [
     { src: "/assets/images/proj1.png", speed: 0.9 },
-    { src: "/assets/images/proj2.png", speed: 0.05 },
+    { src: "/assets/images/proj22.png", speed: 0.05 },
     { src: "/assets/images/proj23.png", speed: 0.05 },
-    { src: "/assets/images/proj13.png", speed: 0.05 },
+    { src: "/assets/images/proj12.png", speed: 0.05 },
     { src: "/assets/images/proj19.png", speed: 0.1 },
-    { src: "/assets/images/proj8.png", speed: 0.1 },
+    { src: "/assets/images/proj10.png", speed: 0.1 },
     { src: "/assets/images/proj21.png", speed: 0.1 },
     { src: "/assets/images/hero3.png", speed: 0.5 },
     { src: "/assets/images/proj23.png", speed: 0.1 },
@@ -92,7 +95,6 @@ const MobileGallery = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -102,7 +104,7 @@ const MobileGallery = () => {
     <div className="relative w-full overflow-hidden h-[200vh] bg-[#1A1A1A]">
       <div className="gap-2 flex justify-center px-2">
         {images.map((column, colIndex) => (
-          <div key={colIndex} className={`flex flex-col gap-2 will-change-transform ${colIndex % 2 === 0 ? `-mt-[700px]` : '-mt-[2000px]'}`} ref={(el) => { imageRefs.current[colIndex][0] = el; }}>
+          <div key={colIndex} className={`flex flex-col gap-2 will-change-transform ${colIndex % 2 === 0 ? `-mt-[1100px]` : '-mt-[2000px]'}`} ref={(el) => { imageRefs.current[colIndex][0] = el; }}>
             {column.map(({ src }, rowIndex) => (
                 <Image src={src} key={rowIndex}
                  alt={`Parallax ${colIndex}-${rowIndex}`} width={1000} height={1000} className="relative rounded-lg shadow-lg overflow-hidden will-change-transform border-[2px] border-gray-500" priority />

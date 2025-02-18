@@ -27,13 +27,21 @@ export const images = [
     "/assets/images/proj19.png",
   ]
 
-export const hero = [
-    "/assets/images/hero3.png",
-    "/assets/images/hero1.png",
-    "/assets/images/hero2.png",
-    "/assets/images/hero4.png",
-    "/assets/images/hero5.png",
+  export const hero = [
+    "/assets/images/6.jpg",
+    "/assets/images/6.jpg",
+    "/assets/images/6.jpg",
+    "/assets/images/6.jpg",
+    "/assets/images/6.jpg",
 ]
+
+// export const hero = [
+//     "/assets/images/hero3.png",
+//     "/assets/images/hero1.png",
+//     "/assets/images/hero2.png",
+//     "/assets/images/hero4.png",
+//     "/assets/images/hero5.png",
+// ]
 
 export const work = [
   {

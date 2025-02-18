@@ -107,7 +107,7 @@ const ContactHero = () => {
                     <Textarea placeholder="Tell us more about your project" name="phone" className="w-full h-[115px] p-2 placeholder:text-slate-50 placeholder:text-base focus-visible:ring-0 border-[1px] border-gray-500 bg-[#242424]" />
                 </div>
             </div>
-            <Button type="submit" className="w-full h-[55px] mt-6 text-lg bg-slate-50 text-slate-950">Request Free Hero Design</Button>
+            <Button type="submit" className="w-full h-[55px] mt-6 text-base bg-slate-50 text-slate-950">Request Free Hero Design</Button>
         </form>
 
         
