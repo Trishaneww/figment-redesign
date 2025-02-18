@@ -51,52 +51,53 @@ const Pricing = () => {
               Your website is an investment. Let us know your budget, and we’ll
               maximize its impact for you.
             </p>
-            <section className="flex gap-8 py-12">
-              <div className="flex flex-col">
-                <p className="tracking-widest text-xl font-bold mb-6">DESIGN</p>
-                <ul className="flex flex-col ml-6">
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Unique aesthetics, tailored for your project</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>User experiences that keep visitors hooked</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Strategic layouts for maximum conversions</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Mobile-first, pixel-perfect designs</p>
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col">
-                <p className="tracking-widest text-xl font-bold mb-6">
-                  DEVELOPMENT
-                </p>
-                <ul className="flex flex-col ml-6">
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Custom-built features that fit your needs</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>SEO & conversion-ready, from the start</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Lightning-fast performance, every time</p>
-                  </li>
-                  <li className="flex gap-2 items-center text-lg">
-                    <div className="bg-[#F5EADF] rounded-full h-[8px] w-[8px]"></div>
-                    <p>Optimized, high-conversion eCommerce solutions</p>
-                  </li>
-                </ul>
-              </div>
-            </section>
+            <section className="grid grid-cols-1 lg:flex gap-8 mt-12 lg:w-full xl:w-full mb-12 text-[#F5EADF]">
+            <div className="hidden lg:flex  lg:w-[200px] xl:w-[300px]"></div>
+            <div className="flex flex-col">
+              <p className="tracking-widest text-xl font-bold mb-6">DESIGN</p>
+              <ul className="flex flex-col ml-6">
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Unique aesthetics, tailored for your project</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>User experiences that keep visitors hooked</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Strategic layouts for maximum conversions</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Mobile-first, pixel-perfect designs</p>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col">
+              <p className="tracking-widest text-xl font-bold mb-6">
+                DEVELOPMENT
+              </p>
+              <ul className="flex flex-col ml-6">
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Custom-built features that fit your needs</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>SEO & conversion-ready, from the start</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Lightning-fast performance, every time</p>
+                </li>
+                <li className="flex gap-2 items-center text-lg">
+                  <div className="bg-[#F5EADF] rounded-full min-h-[8px] min-w-[8px]"></div>
+                  <p>Optimized, high-conversion eCommerce solutions</p>
+                </li>
+              </ul>
+            </div>
+          </section>
           </section>
         </div>
         <PriceCards />
