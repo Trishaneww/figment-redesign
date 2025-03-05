@@ -110,72 +110,91 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <section className="flex gap-6 justify-center items-center overflow-hidden relative mt-20 lg:hidden">
-        {hero.map((src, idx) => (
+      <section className="flex gap-1 justify-center items-center overflow-hidden relative mt-20 lg:hidden">
           <Image
-            width={1000}
-            height={1000}
-            src={src}
+            width={300}
+            height={300}
+            src='/assets/images/mobile11.png'
             alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-4 -mr-4"
             priority
-            key={idx}
           />
-        ))}
+            <Image
+            width={300}
+            height={300}
+            src='/assets/images/mobile8.png'
+            alt="mobile view landing page"
+            className="rounded-xl -ml-4 -mr-4"
+            priority
+          />
+         <Image
+            width={300}
+            height={300}
+            src='/assets/images/mobile9.png'
+            alt="mobile view landing page"
+            className="rounded-xl -ml-4 -mr-4"
+            priority
+          />
+           <Image
+            width={300}
+            height={300}
+            src='/assets/images/mobile10.png'
+            alt="mobile view landing page"
+            className="rounded-xl -ml-4 -mr-4"
+            priority
+          />
+           <Image
+            width={300}
+            height={300}
+            src='/assets/images/mobile12.png'
+            alt="mobile view landing page"
+            className="rounded-xl -ml-4 -mr-4"
+            priority
+          />
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
         {/* Right Fade Effect */}
         <div className="absolute inset-y-0 right-0 w-[6rem] lg:w-[40rem] bg-gradient-to-l from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
       </section>
-      <section className="hidden lg:flex gap-6 justify-center items-center overflow-hidden relative mt-20">
-        {/* {hero.map((src, idx) => (
+
+      <section className="hidden lg:flex gap-1 justify-center items-center overflow-hidden relative mt-20">
           <Image
             width={1000}
             height={1000}
-            src='/assets/images/6.jpg'
+            src='/assets/images/mobile11.png'
             alt="mobile view landing page"
-            className="rounded-xl"
-            priority
-            key={idx}
-          />
-        ))} */}
-          <Image
-            width={1000}
-            height={1000}
-            src='/assets/images/mobile5.png'
-            alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-8 -mr-8"
             priority
           />
             <Image
             width={1000}
             height={1000}
-            src='/assets/images/mobile5.png'
+            src='/assets/images/mobile8.png'
             alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-8 -mr-8"
             priority
           />
          <Image
             width={1000}
             height={1000}
-            src='/assets/images/mobile5.png'
+            src='/assets/images/mobile9.png'
             alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-8 -mr-8"
             priority
           />
            <Image
             width={1000}
             height={1000}
-            src='/assets/images/mobile5.png'
+            src='/assets/images/mobile10.png'
             alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-8 -mr-8"
             priority
           />
            <Image
             width={1000}
             height={1000}
-            src='/assets/images/mobile5.png'
+            src='/assets/images/mobile12.png'
             alt="mobile view landing page"
-            className="rounded-xl"
+            className="rounded-xl -ml-8 -mr-8"
             priority
           />
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
