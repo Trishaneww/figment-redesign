@@ -9,7 +9,7 @@ const images = [
     { src: "/assets/images/hero3.png", speed: 0.5 },
     { src: "/assets/images/hero2.png", speed: 0.1 },
     { src: "/assets/images/proj5.png", speed: 0.1 },
-    { src: "/assets/images/proj6.png", speed: 0.1 },
+    { src: "/assets/images/proj28.png", speed: 0.1 },
     { src: "/assets/images/proj24.png", speed: 0.1 },
     { src: "/assets/images/proj5.png", speed: 0.1 },
     { src: "/assets/images/hero4.png", speed: 0.1 },
@@ -19,8 +19,8 @@ const images = [
   ],
   [
     { src: "/assets/images/proj1.png", speed: 0.9 },
-    { src: "/assets/images/proj2.png", speed: 0.05 },
-    { src: "/assets/images/proj1.png", speed: 0.05 },
+    { src: "/assets/images/proj27.png", speed: 0.05 },
+    { src: "/assets/images/proj25.png", speed: 0.05 },
     { src: "/assets/images/proj13.png", speed: 0.05 },
     { src: "/assets/images/proj19.png", speed: 0.1 },
     { src: "/assets/images/proj8.png", speed: 0.1 },
@@ -41,7 +41,7 @@ const images = [
   ],
   [
     { src: "/assets/images/proj8.png", speed: 0.9 },
-    { src: "/assets/images/proj11.png", speed: 0.05 },
+    { src: "/assets/images/proj26.png", speed: 0.05 },
     { src: "/assets/images/proj9.png", speed: 0.05 },
     { src: "/assets/images/proj11.png", speed: 0.05 },
     { src: "/assets/images/proj23.png", speed: 0.1 },

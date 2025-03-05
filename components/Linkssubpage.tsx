@@ -231,22 +231,4 @@ export default function Linksubpage() {
   );
 }
 
-const Column = ({ images, y }: ColumnProps) => {
-  return (
-    <motion.div className="column" style={{ y }}>
-      {images.map((src: any, i: any) => {
-        return (
-          <div key={i}>
-            <Image
-              src={src}
-              alt="image"
-              className="border-[2px] border-gray-400 rounded-xl"
-              width={1000}
-              height={1000}
-            />
-          </div>
-        );
-      })}
-    </motion.div>
-  );
-};
+
