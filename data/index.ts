@@ -28,11 +28,11 @@ export const images = [
   ]
 
   export const hero = [
-    "/assets/images/6.jpg",
+    "/assets/images/mobile8.png",
     "/assets/images/mobile8.png",
     "/assets/images/mobile9.png",
     "/assets/images/mobile10.png",
-    "/assets/images/6.jpg",
+    "/assets/images/mobile12.png",
 ]
 
 // export const hero = [
