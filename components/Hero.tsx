@@ -45,26 +45,31 @@ const Hero = () => {
             src={image4}
             alt="mobile view landing page"
             className="rounded-xl -ml-4 -mr-4"
+            priority
           />
             <Image
             src={image5}
             alt="mobile view landing page"
             className="rounded-xl -ml-4 -mr-4"
+            priority
           />
          <Image
             src={image1}
             alt="mobile view landing page"
             className="rounded-xl -ml-4 -mr-4"
+            priority
           />
            <Image
             src={image3}
             alt="mobile view landing page"
             className="rounded-xl -ml-4 -mr-4"
+            priority
           />
            <Image
             src={image2}
             alt="mobile view landing page"
             className="rounded-xl -ml-4 -mr-4"
+            priority
           />
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
         {/* Right Fade Effect */}
@@ -73,34 +78,34 @@ const Hero = () => {
 
       <section className="hidden lg:flex gap-1 justify-center items-center overflow-hidden relative mt-20">
           <Image
-
             src={image4}
             alt="mobile view landing page"
             className="rounded-xl -ml-8 -mr-8"
+            priority
           />
             <Image
-
             src={image5}
             alt="mobile view landing page"
             className="rounded-xl -ml-8 -mr-8"
+            priority
           />
          <Image
-
             src={image1}
             alt="mobile view landing page"
             className="rounded-xl -ml-8 -mr-8"
+            priority
           />
            <Image
-
             src={image3}
             alt="mobile view landing page"
             className="rounded-xl -ml-8 -mr-8"
+            priority
           />
            <Image
-
             src={image2}
             alt="mobile view landing page"
             className="rounded-xl -ml-8 -mr-8"
+            priority
           />
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
         {/* Right Fade Effect */}
