@@ -44,31 +44,31 @@ const Hero = () => {
           <Image
             src={image4}
             alt="mobile view landing page"
-            className="rounded-xl -ml-4 -mr-4"
+            className="rounded-xl -ml-4 -mr-4 max-w-[250px]"
             priority
           />
             <Image
             src={image5}
             alt="mobile view landing page"
-            className="rounded-xl -ml-4 -mr-4"
+            className="rounded-xl -ml-4 -mr-4 max-w-[250px]"
             priority
           />
          <Image
             src={image1}
             alt="mobile view landing page"
-            className="rounded-xl -ml-4 -mr-4"
+            className="rounded-xl -ml-4 -mr-4 max-w-[250px]"
             priority
           />
            <Image
             src={image3}
             alt="mobile view landing page"
-            className="rounded-xl -ml-4 -mr-4"
+            className="rounded-xl -ml-4 -mr-4 max-w-[250px]"
             priority
           />
            <Image
             src={image2}
             alt="mobile view landing page"
-            className="rounded-xl -ml-4 -mr-4"
+            className="rounded-xl -ml-4 -mr-4 max-w-[250px]"
             priority
           />
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
@@ -80,33 +80,44 @@ const Hero = () => {
           <Image
             src={image4}
             alt="mobile view landing page"
-            className="rounded-xl -ml-8 -mr-8"
+            className="rounded-xl -ml-8 -mr-8 max-w-[500px]"
             priority
+
           />
-            <Image
+
+          <Image
             src={image5}
             alt="mobile view landing page"
-            className="rounded-xl -ml-8 -mr-8"
+            className="rounded-xl -ml-8 -mr-8 max-w-[500px]"
             priority
           />
-         <Image
+
+<Image
             src={image1}
             alt="mobile view landing page"
-            className="rounded-xl -ml-8 -mr-8"
+            className="rounded-xl -ml-8 -mr-8 max-w-[500px]"
             priority
+
           />
-           <Image
-            src={image3}
-            alt="mobile view landing page"
-            className="rounded-xl -ml-8 -mr-8"
-            priority
-          />
-           <Image
+
+<Image
             src={image2}
             alt="mobile view landing page"
-            className="rounded-xl -ml-8 -mr-8"
+            className="rounded-xl -ml-8 -mr-8 max-w-[500px]"
             priority
+
           />
+
+<Image
+            src={image3}
+            alt="mobile view landing page"
+            className="rounded-xl -ml-8 -mr-8 max-w-[500px]"
+            priority
+
+          />
+
+
+       
         <div className="absolute inset-y-0 left-0 w-[6rem] lg:w-[40rem] bg-gradient-to-r from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
         {/* Right Fade Effect */}
         <div className="absolute inset-y-0 right-0 w-[6rem] lg:w-[40rem] bg-gradient-to-l from-[#1A1A1A] via-[#1a1a1a69] to-transparent"></div>
