@@ -82,12 +82,12 @@ export const work = [
 export const navItems = [
     {
         id:1,
-        title: 'Pricing',
+        title: 'PRICING',
         href:"/pricing"
     },
     {
         id:2,
-        title: 'Gallery',
+        title: 'GALLERY',
         href:"/work"
     },
 ]

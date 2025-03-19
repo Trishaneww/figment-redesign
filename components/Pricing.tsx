@@ -10,7 +10,7 @@ const PriceCards = () => {
   return (
     <div className="flex flex-col items-center gap-16 relative z-30 bg-[#1A1A1A]">
         <section className="flex flex-col justify-center items-center gap-4 text-center z-10">
-            <p className="text-3xl md:text-5xl lg:text-7xl font-semibold">every project is <span className="font-extrabold">unique</span></p>
+            <p className="text-3xl md:text-5xl lg:text-7xl font-semibold">Every project is <span className="font-extrabold">unique</span></p>
             <p className="text-base lg:text-lg">The cost of a website depends on your goals and features. Our pricing plans give you a clear idea of what to expect.</p>
         </section>
         <div className="flex flex-wrap items-center gap-4 justify-center ">

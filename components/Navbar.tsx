@@ -24,15 +24,15 @@ const Navbar = () => {
 
           <div className="flex justify-center items-center gap-8">
             {navItems.map((item,idx) => (
-              <Link href={item.href} key={idx} className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")} aria-label="navigation link">{item.title}</Link>
+              <Link href={item.href} key={idx} className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="navigation link">{item.title}</Link>
             ))}
           </div>
           <Link href="https://www.instagram.com/figmentstudios.ca/" className="text-slate-50" aria-label="instagram link"><Instagram className="hidden lg:flex"/></Link>
         </div>
 
         <div className="flex gap-8 items-center text-slate-50">
-          <Link href='mailto:trishane@figmentstudios.ca' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")} aria-label="email us link">Contact Us</Link>
-          <Link href='/contact' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-wide")} aria-label="get a free audit">Get a Free Audit</Link>
+          <Link href='mailto:trishane@figmentstudios.ca' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="email us link">CONTACT US</Link>
+          <Link href='/contact' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="get a free audit">GET A FREE AUDIT</Link>
         </div>
 
 
@@ -51,11 +51,11 @@ const Navbar = () => {
         
         </label>
         <div className="flex flex-col gap-2">
-          <Link href="/" className="text-slate-50 text-base" aria-label="navigation link">Home</Link> 
-          <Link href="/work" className="text-slate-50 text-base -mt-4" aria-label="navigation link">Gallery</Link>
-          <Link href="/pricing" className="text-slate-50 text-base -mt-4" aria-label="navigation link">Pricing</Link>
+          <Link href="/" className="text-slate-50 text-base tracking-widest" aria-label="navigation link">HOME</Link> 
+          <Link href="/work" className="text-slate-50 text-base -mt-4 tracking-widest" aria-label="navigation link">GALLERY</Link>
+          <Link href="/pricing" className="text-slate-50 text-base -mt-4 tracking-widest" aria-label="navigation link">PRICING</Link>
           <Link href="/contact" aria-label="navigation link">
-            <Button className="w-[200px] h-[50px] bg-slate-50 text-slate-950 text-base lg:text-lg">Get a Free Redesign</Button>
+            <Button className="w-[210px] h-[50px] bg-slate-50 text-slate-950 text-sm tracking-widest">GET A FREE REDESIGN</Button>
           </Link>
         </div>
 
