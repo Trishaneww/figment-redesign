@@ -44,7 +44,7 @@ const Pricing = () => {
         <div className="lg:px-24 relative z-20 bg-[#1A1A1A] px-6 pb-10 lg:pb-20 lg:pt-20">
           <section className="flex flex-col items-center gap-4">
             <p className="text-3xl md:text-5xl lg:text-7xl font-semibold text-center">
-              what is a website <span className="font-extrabold">worth</span> to
+              What is a website <span className="font-extrabold">worth</span> to
               you?
             </p>
             <p className="text-base lg:text-lg">

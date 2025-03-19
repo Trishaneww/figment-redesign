@@ -59,7 +59,7 @@ const ContactHero = () => {
                     
                 </section>
             </div>
-            <p className="text-3xl lg:text-4xl font-semibold">Unlock Your Websites Potential with a Free Audit</p>
+            <p className="text-3xl lg:text-4xl font-semibold">Unlock your websites potential with a free audit</p>
             <p className="text-lg">See how we can improve your site before committing to a full redesign. Get personalized insights to boost performance and conversions—completely free.</p>
             <ul className="flex flex-col text-lg gap-2">
                 <li className="flex gap-2 items-center text-base lg:text-lg">
@@ -107,7 +107,7 @@ const ContactHero = () => {
                     <Textarea placeholder="Tell us more about your project" name="phone" className="w-full h-[115px] p-2 placeholder:text-slate-50 placeholder:text-base focus-visible:ring-0 border-[1px] border-gray-500 bg-[#242424]" />
                 </div>
             </div>
-            <Button type="submit" className="w-full h-[55px] mt-6 text-base bg-slate-50 text-slate-950">Request Free Hero Design</Button>
+            <Button type="submit" className="w-full h-[55px] mt-6 text-sm bg-slate-50 text-slate-950 tracking-widest">REQUEST A FREE HERO REDESIGN</Button>
         </form>
 
         
