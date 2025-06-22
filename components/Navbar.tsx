@@ -19,7 +19,7 @@ const Navbar = () => {
                 "relative dark:text-slate-50 items-center flex space-x-1 text-slate-50"
               )}
               aria-label="homepage link">
-                <p className="text-lg lg:text-xl font-extrabold">FIGMENT STUDIOS</p>
+                <p className="text-lg lg:text-xl font-extrabold">WIZE STUDIOS</p>
           </Link>
 
           <div className="flex justify-center items-center gap-8">
