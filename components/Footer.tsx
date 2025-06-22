@@ -20,7 +20,8 @@ const Footer = () => {
                 <div className="flex gap-4">
                     {/* <p>4</p> */}
                     <div className="flex flex-col">
-                        <ul className="text-slate-50 text-base flex flex-col gap-2">
+                        <ul className="text-[#a4a4a4] text-base flex flex-col gap-2">
+                            <li className="text-[1.1rem] font-medium text-slate-50">Company</li>
                             <li><Link href="/#services" aria-label="navigation link">Services</Link></li>
                             <li><Link href="/work" aria-label="navigation link">Gallery</Link></li>
                             <li><Link href="/pricing" aria-label="navigation link"></Link>Pricing</li>
@@ -31,10 +32,11 @@ const Footer = () => {
 
                 <div className="flex gap-4">
                     <div className="flex flex-col">
-                        <ul className="text-slate-50 text-base flex flex-col gap-2">
-                            <li><Link href="mailto:mediabystephenson@gmail.com" target="_blank" aria-label="Email us now!">trishane@figmentstudios.ca</Link></li>
+                        <ul className="text-[#a4a4a4] text-base flex flex-col gap-2">
+                            <li className="text-[1.1rem] font-medium text-slate-50">Contact</li>
+                            <li><Link href="mailto:trishane@wizeconsulting.ca" target="_blank" aria-label="Email us now!">trishane@wizeconsulting.ca</Link></li>
                             <li>(647)-472-4119</li>
-                            <li><Link href="/https://www.instagram.com/stephenson.media/" target="_blank" aria-label="View more of our work on instagram">Instagram</Link></li>
+                            <li><Link href="https://www.instagram.com/wizestudios.ca" target="_blank" aria-label="View more of our work on instagram">Instagram</Link></li>
                         </ul>
                     </div>
                 </div>

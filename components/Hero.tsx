@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="flex flex-col gap-2 items-center justify-center text-[#F5EADF] z-30 bg-[#1A1A1A]">
       <div className="flex flex-col items-center lg:w-[60%] text-center text-base gap-4 mt-44 px-6 max-w-[900px]">
         <p className="text-4xl lg:text-[3.5rem] lg:leading-[3.2rem] text-center font-semibold">
-          Stand out online with a custom website built for success.
+        Stand out online with a custom website built for success.
         </p>
         <p className="px-6 text-xl lg:w-[70%] xl:min-w-[700px]">
           We design and develop custom, high-performing websites tailored to
