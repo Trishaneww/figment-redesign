@@ -27,11 +27,11 @@ const Navbar = () => {
               <Link href={item.href} key={idx} className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="navigation link">{item.title}</Link>
             ))}
           </div>
-          <Link href="https://www.instagram.com/figmentstudios.ca/" className="text-slate-50" aria-label="instagram link"><Instagram className="hidden lg:flex"/></Link>
+          <Link href="https://www.instagram.com/wizestudios.ca/" className="text-slate-50" aria-label="instagram link"><Instagram className="hidden lg:flex"/></Link>
         </div>
 
         <div className="flex gap-8 items-center text-slate-50">
-          <Link href='mailto:trishane@figmentstudios.ca' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="email us link">CONTACT US</Link>
+          <Link href='mailto:trishane@wizeconsulting.ca' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="email us link">CONTACT US</Link>
           <Link href='/contact' className={cn("relative dark:text-slate-50 items-center hidden lg:flex space-x-1 text-slate-50 tracking-widest text-sm")} aria-label="get a free audit">GET A FREE AUDIT</Link>
         </div>
 
