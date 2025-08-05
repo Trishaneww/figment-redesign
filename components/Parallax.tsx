@@ -71,11 +71,11 @@ export default function Home() {
       <div className="relative z-20 bg-[#1A1A1A] px-6 pb-10 lg:pb-20 pt-20 lg:pt-44">
         <section className="flex flex-col gap-2 text-[#F5EADF]">
           <p className="text-3xl lg:text-4xl lg:w-[58%] lg:px-24">
-          Welcome to Figment Studios! We&apos;re a website development company founded by Trishane Anthony. We specialize in custom websites that help businesses stand out and thrive online.
+          Welcome to Wize Studios! We&apos;re a website development company founded by Trishane Anthony. We specialize in custom websites that help businesses stand out and thrive online.
           </p>
           <div className="flex items-center gap-2 text-lg group lg:px-24">
             <div className="bg-slate-50 h-[1.4px] w-[25px]  group-hover:w-[40px] duration-300"></div>
-            <p>Why Figment Studios?</p>
+            <p>Why Wize Studios?</p>
           </div>
           <section className="grid grid-cols-1 lg:flex gap-8 mt-12 lg:w-full xl:w-full mb-12 text-[#F5EADF]">
             <div className="hidden lg:flex  lg:w-[200px] xl:w-[300px]"></div>

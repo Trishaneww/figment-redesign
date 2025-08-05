@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col gap-12 lg:gap-2 flex-wrap lg:flex-row justify-between lg:w-[80%] border-b-[1px] border-b-gray-200 pb-12">
 
         <section className="flex flex-col items-start justify-start gap-2  lg:max-w-[380px] text-slate-50">
-            <p className="text-2xl font-extrabold mb-2">FIGMENT STUDIOS</p>
+            <p className="text-2xl font-extrabold mb-2">WIZE STUDIOS</p>
             <p className="text-base">We design and develop custom, high-performing websites tailored to help your business stand out and grow.</p>
             <Link href="/contact" className="flex items-center gap-1 text-base text-slate-50 group" aria-label="Link leads to contact page">
             <p>Get Started</p>
@@ -44,7 +44,7 @@ const Footer = () => {
         </section>
         </div>
         <div className="lg:w-[80%] flex gap-2 text-slate-50 text-sm pt-8">
-            <p>@2025 FIGMENT STUDIOS</p>
+            <p>@2025 WIZE STUDIOS</p>
             <p>ALL RIGHTS RESERVED</p>
         </div>
     </div>

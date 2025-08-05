@@ -108,9 +108,9 @@ export default function Linksubpage() {
           width={200}
           height={200}
           src="/assets/images/logo2.png"
-          alt="figment studios logo"
+          alt="wize studios logo"
         />
-        <p className="text-2xl font-extrabold">FIGMENT STUDIOS</p>
+        <p className="text-2xl font-extrabold">WIZE STUDIOS</p>
         <p>We build amazing websites</p>
 
         <div className="flex flex-col gap-2 w-full items-center mt-6">
@@ -160,7 +160,7 @@ export default function Linksubpage() {
           </Link>
 
           <Link
-            href="https://www.instagram.com/figmentstudios.ca"
+            href="https://www.instagram.com/wizestudios.ca"
             target="_blank"
             className="w-full flex justify-center items-center"
             aria-label="Link leads to instagram page"
